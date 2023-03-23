@@ -1,0 +1,44 @@
+.card {
+    box-shadow: 0px 2px 6px #0000000A;
+    color: #FFFFFF;
+    opacity: 1;
+    width: 386px;
+    height: 295px;
+}
+
+.card-header {
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.card-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.price {
+    text-align: center;
+    font: normal normal normal 80px/21px Roboto;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.buy-button {
+    width: 120px;
+    height: 35px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 4px;
+    text-align: center;
+    font: normal normal normal 15px/18px Roboto;
+    letter-spacing: 0px;
+    color: #3B86FF;
+    opacity: 1;
+    text-transform: uppercase;
+}
+
+.buy-button:hover {
+    cursor: pointer;
+}

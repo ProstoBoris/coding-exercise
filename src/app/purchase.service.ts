@@ -13,6 +13,7 @@ export class PurchaseService {
       name: 'starter',
       description: 'Starter features for your business to grow.',
       price: 1,
+      color: '#979797',
       selected: false
     },
     {
@@ -20,6 +21,7 @@ export class PurchaseService {
       name: 'regular',
       description: 'Regular features for your business to grow.',
       price: 25,
+      color: '#3B86FF',
       selected: false
     },
     {
@@ -27,6 +29,7 @@ export class PurchaseService {
       name: 'professional',
       description: 'Professional features for your business to grow.',
       price: 75,
+      color: '#8B68EE',
       selected: false
     },
     {
@@ -34,6 +37,7 @@ export class PurchaseService {
       name: 'ultimate',
       description: 'The ultimate set of features for your business to grow.',
       price: 115,
+      color: '#EE3541',
       selected: false
     }
   ];
@@ -58,5 +62,6 @@ export interface CardOption {
   name: string;
   description: string;
   price: number;
+  color: string;
   selected: boolean;
 }
