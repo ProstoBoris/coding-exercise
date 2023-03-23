@@ -9,10 +9,18 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
+import { NavbarComponent } from './navbar/navbar.component';
+import { PageOneComponent } from './page-one/page-one.component';
+import { PageTwoComponent } from './page-two/page-two.component';
+import { CardComponent } from './card/card.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NavbarComponent,
+    PageOneComponent,
+    PageTwoComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,
