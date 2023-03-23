@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 import { CardOption } from '../purchase.service';
 
@@ -9,4 +9,9 @@ import { CardOption } from '../purchase.service';
 })
 export class CardComponent {
   @Input() option?: CardOption;
+  @Output() select: EventEmitter<void> = new EventEmitter();
+
+  selectOption() {
+    this.select.emit();
+  }
 }
