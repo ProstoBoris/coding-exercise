@@ -46,6 +46,9 @@ export class PurchaseService {
     return this.options;
   }
 
+  // select or unselect (toggle) an option
+  // if one option is selected,
+  // all other options are set as unselected
   setSelectedOption(index: number) {
     this.options.forEach((option, i) => {
       if (i === index) option.selected = !option.selected;
@@ -53,6 +56,7 @@ export class PurchaseService {
     });
   }
 
+  // get the index of selected option
   getSelectedOption() {
     return this.options.find(option => option.selected)?.index;
   }

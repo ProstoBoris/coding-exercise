@@ -23,7 +23,6 @@ export class PageTwoComponent {
   }
 
   getSelectedOption() {
-    console.log('GET SEL', this.purchaseService.getSelectedOption())
     return this.purchaseService.getSelectedOption();
   }
 }
