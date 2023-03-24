@@ -1,11 +1,11 @@
-<div class="card" [ngStyle]="{'background-color': option?.selected ?  'orange' : option?.color}"
+<div class="card" [ngStyle]="{'background-color': option?.color}"
     [ngClass]="{'card-disabled': (selectedOption || selectedOption === 0) && !option?.selected}">
     <div class="card-header">
         <div>{{option?.name}}</div>
     </div>
     <div class="card-body">
-        <h4 class="price">{{option?.selected ? 'Bought!' : '$' + option?.price}}</h4>
-        <div>{{option?.description}}</div>
+        <div class="price">{{option?.selected ? 'Bought!' : '$' + option?.price}}</div>
+        <div class="card-description">{{option?.description}}</div>
         <button class="buy-button" (click)="selectOption()">{{option?.selected ? 'Cancel' : 'Buy'}}</button>
     </div>
 </div>
