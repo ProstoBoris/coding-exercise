@@ -48,12 +48,13 @@ export class PurchaseService {
 
   setSelectedOption(index: number) {
     this.options.forEach((option, i) => {
-      option.selected = i === index;
+      if (i === index) option.selected = !option.selected;
+      else { option.selected = false }
     });
   }
 
   getSelectedOption() {
-    return this.options.find(option => option.selected);
+    return this.options.find(option => option.selected)?.index;
   }
 }
 
