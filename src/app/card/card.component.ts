@@ -9,6 +9,7 @@ import { CardOption } from '../purchase.service';
 })
 export class CardComponent {
   @Input() option?: CardOption;
+  @Input() selectedOption: any;
   @Output() select: EventEmitter<void> = new EventEmitter();
 
   selectOption() {

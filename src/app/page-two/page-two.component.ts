@@ -9,6 +9,7 @@ import { CardOption, PurchaseService } from '../purchase.service';
 })
 export class PageTwoComponent {
   options: CardOption[] = [];
+  selectedOption = this.getSelectedOption();
 
   constructor(private purchaseService: PurchaseService) { }
 
@@ -17,11 +18,12 @@ export class PageTwoComponent {
   }
 
   selectOption(index: number) {
-    console.log('SELECTED', index)
     this.purchaseService.setSelectedOption(index);
+    this.selectedOption = this.getSelectedOption();
   }
 
   getSelectedOption() {
+    console.log('GET SEL', this.purchaseService.getSelectedOption())
     return this.purchaseService.getSelectedOption();
   }
 }
