@@ -1,7 +1,9 @@
-<mat-toolbar color="primary">
+<mat-toolbar color="primary" style="min-height: 50px !important; height: 50px !important;">
     <mat-toolbar-row>
-        <span>MyApp</span>
-        <span><a routerLink="/page-one" routerLinkActive="active">One</a></span>
-        <a routerLink="/page-two" routerLinkActive="active">Two</a>
+        <span class="title-span">MyApp</span>
+        <div class="nav-container">
+            <div class="nav-div one"><a routerLink="/page-one" routerLinkActive="active">One</a></div>
+            <div class="nav-div two"><a routerLink="/page-two" routerLinkActive="active">Two</a></div>
+        </div>
     </mat-toolbar-row>
 </mat-toolbar>
